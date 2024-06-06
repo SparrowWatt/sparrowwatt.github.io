@@ -1,56 +1,182 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Automatický Květináč</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<link rel="icon" type="image" href="pictures/990.png">
-<body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">Automatický</span> Květináč</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="index.html">Domů</a></li>
-          <li><a href="features.html">Funkce</a></li>
-          <li><a href="support.html">Oprava</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section id="showcase">
-    <div class="container">
-      <h1>Vítejte v stránce o mém projektu Automatický Květináč!</h1>
-      <p>Jde o můj projekt pro první ročník oboru IoT.</p>
-      <p>Jedná se o květináč, který se bude starat o rostlinu, když nejste doma,</p>
-      <p>ale někde na dovolené nebo trávíte víkend u babičky na vesnici.</p>
-      <p>Květináč je vybaven mnoha funkcemi, které jsou velmi užitečné!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automatický Květináč</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="./pictures/990.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+    <script src="scripts.js"></script>
+    <style>
+        span.title {color:#12b288}
+        span.navigation {color:#15cc9c}
+        span.highlight1 {color:#15ccc6}
+
+        a:link {color:#15cc9c; text-decoration:solid;}
+        a:visited {color: #057443; text-decoration:none;}
+        a:hover {color:#548477; text-decoration:underline;}
+
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+  </head>
+
+  <body>
+
+<div class="mb-3 p-3 text-white square bg-black"> <!-- Title head -->
+
+    <h1 class="display-3"><b><span class="title">Automatický</span> Květináč</b></h1>
+
+    <ul class="nav nav-tabs justify-content-end">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html"><span class="navigation">Domů</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./features.html"><span class="navigation">Funkce</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./support.html"><span class="navigation">Oprava</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="./galerie.html"><span class="navigation">Galerie</span></a>
+        </li>
+      </ul>
+
+</div>
+
+<div class="row align-items-center"> <!-- Tohle určuje 3 sloupce po 4 pro text na stránce -->
+
+    <div class="container-fluid col-sm-4 text-justify">
+        <h1 class="header-4">O projektu:</h1>
+
+        <p class="text-justify m-4">
+            Vítejte na stránce o projektu <span class="title">Automatický Květináč.</span>
+
+            <br>
+
+            Jde o projekt pro <span class="highlight1">1. ročník oboru IoT na SPŠE.</span>
+
+            <br>
+            <br>
+
+            Projekt <span class="title">Automatický Květináč</span> je určen ke starání se o rostlinu,
+
+            <br>
+
+            když zrovna nejste doma, ale například někde na dovolené, <span class="highlight1">mimo domov.</span>
+
+            <br>
+            <br>
+
+            <span class="title">Aplikace</span> je vybavena mnoha <span class="highlight1">funkcemi</span>, o kterých si můžete přečíst <a href="./features.html">zde</a>.
+
+            <br>
+            <br>
+
+            Pokud máte jakékoliv <span class="highlight1">problémy s aplikací</span>, můžete využít <a href="./support.html">stránky pro opravu</a>.
+
+            <br>
+            <br>
+
+            Jestli chcete před koupí aplikace zjistit, <span class="highlight1">jak vypadá,</span> můžete se podívat <a href="./galerie.html">zde</a>.
+        </p>
     </div>
-  </section>
-  <section id="features">
-    <div class="container">
-      <h2>Funkce květináče</h2>
-      <p>Automatické zavlažování, RGB led diody, LCD displej a mnoho dalších!</p>
-      <p>V sekci funkce si můžete přečíst podrobnější informace o funkcích květináče.</p>
-      <h2>Oprava chyb</h2>
-      <p>Máte s květináčem nějaký problém?</p>
-      <p>V části Oprava najdete na mě kontakty a možná i odpověď na Váš problém.</p>
-      <h2>Galerie</h2>
-      <p>Pokud se chcete podívat jak vypadal květináč v průběhu montaže.</p>
-      <p>Přejděte do Galerie, kde se nachází pár fotek.</p>
+
+    <div class="vr"></div>
+
+    <div class="container-fluid col-sm-4 text-justify">
+        <h1 class="header-4">O stránce:</h1>
+
+        <p class="text-justify m-4">
+            Stránka je dělaná pomocí <span class="title">BootStrap 5.</span>
+
+            <br>
+
+            Zdrojový kód stránky si můžete zobrazit pomocí <span class="highlight1">Ctrl+U</span>
+
+            <br>
+            <br>
+
+            Dále můžete stránku sami poupravovat s mým schválením <span class="title"><a href="https://github.com/SparrowWatt/SparrowWatt.github.io">v repozitáři.</a></span>
+
+            <br>
+
+            Původním autorem stránky je <span class="highlight1">Daniel <span class="title"><i>"SparrowWatt"</i></span> Kovář.</span>
+
+            <br>
+            <br>
+
+            Stránku připravoval na požádání <span class="highlight1">Štěpán <span class="title"><i>"rollkun"</i></span> Kunta.</span>
+
+            <br>
+            <br>
+
+            Jakékoliv dotazy prosím směřujte na původního autora. 
+
+            <br>
+            <br>
+
+            Jakékoliv chyby s kódem též směřujte na původního autora.
+
+        </p>
     </div>
-</section>
+
+    <hr>
+
+    <div class="container-fluid text-center"> <!-- Karty pro více informací -->
+        <h1 class="header-5">O nás:</h1>
+        <div class="row mt-3 justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="./pictures/sparrowwatt.png" alt="Karta: Daniel Kovář">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title align-items-center">
+                            <span class="highlight1">Daniel <span class="title"><b>"SparrowWatt"</b></span> Kovář</span>
+                        </h4>
+                        <p class="card-text"><i>Student SPŠE, 1. ročník, obor IoT <br> Autor ročníkové práce</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="./pictures/rollkun.png" alt="Karta: Štěpán Kunta">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title align-items-center">
+                            <span class="highlight1">Štěpán <span class="title"><b>"rollkun"</b></span> Kunta</span>
+                        </h4>
+                        <p class="card-text"><i>Student G+SOŠ, 1. ročník, obor IT <br> Web design</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 
 <footer>
-    <p>Automatický Květináč © 2024</p>
+    <div class="footer mb-0 p-1 text-white d-flex align-items-center justify-content-between"> <!-- Text vlevo s pachvachtem -->
+        <p class="mb-0">Automatický Květináč &#169; 2024</p>
+
+        <a class="navbar-brand mb-0" href="#"> <!-- Logo SPŠE v centru footer elementu -->
+            <img src="./pictures/990.png" alt="SPŠE logo" style="width:40px;" class="img-fluid">
+        </a>
+
+        <p class="mb-0 align-items-center"><i>Tato stránka je školní projekt.</i></p> <!-- Text vpravo pro informaci -->
+    </div>
 </footer>
+  
+
 </body>
-<script src="scripts.js"></script>
+
 </html>
