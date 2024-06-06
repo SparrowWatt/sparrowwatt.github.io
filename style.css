@@ -57,7 +57,7 @@ body {
     font-weight: bold; 
   }
 
-  img {
+  .card-img-top {
     width: 60%;
     display: block; 
     margin: 10px auto; 
@@ -65,13 +65,14 @@ body {
     border-radius: 15px;
   }
 
+
   footer {
     background: #000000; 
     color: #fff;
     padding-top: 10px;
     padding-bottom: 5px;
     border-top: #15cc9c 3px solid;
-    position: absolute; /* Změněno z 'fixed' na 'relative' */
+    position: absolute;
     width: 100%;
     text-align: center;
     overflow: hidden; 
